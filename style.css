@@ -1,0 +1,187 @@
+html{
+    background: radial-gradient(circle, #ffffff, #999);
+    background: -webkit-radial-gradient(circle, #fff, #999);
+    background: -moz-radial-gradient(circle, #fff, #999);
+    background: -o-radial-gradient(circle, #fff, #999);
+    background: -ms-radial-gradient(circle, #fff, #8999);
+    height: 100%;
+}
+
+
+#container {
+    height: 600px;
+    width: 750px;
+    background-color: #9DD2EA;
+    margin: 10px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 0px 0px #009de4;
+    -webkit-box-shadow: 0px 4px 0px 0px #009de4;
+    -moz-box-shadow: 0px 4px 0px 0px #009de4;
+    -ms-box-shadow: 0px 4px 0px 0px #009de4;
+    -o-box-shadow: 0px 4px 0px 0px #009de4;
+/*   box-shadow: [horizontal offset] [vertical offset] [blur radius] [optional spread radius] [color] */
+    position: relative;
+}
+
+
+
+#trailsLeft {
+    width: 80px;
+    padding: 10px;
+    background-color: #f1ff92;
+    border-radius: 3px;
+    box-shadow: 0px 4px rgba(0, 0, 0, 0.2);
+/*    visibility: hidden; */
+/*    display: none;*/
+    position: absolute;
+}
+
+#score{
+    background-color: #F1FF92;
+    color: #888E5F;
+    padding: 11px;
+    position: absolute;
+    left: 700px;
+    box-shadow: 0px 4px 0px #9da853;
+    -webkit-box-shadow: 0px 4px 0px #9da853;
+    -moz-box-shadow: 0px 4px 0px #9da853;
+    -ms-box-shadow: 0px 4px 0px #9da853;
+    -o-box-shadow: 0px 4px 0px #9da853;
+}
+
+#correct{
+    position: absolute;
+    left: 260px;
+    background-color: #42e252;
+    color: white;
+    padding: 11px;
+    display: none;
+}
+
+#wrong{
+    position: absolute;
+    left: 250px;
+    background-color: #de401a;
+    padding: 11px;
+    color: white;
+    display: none;
+}
+
+
+
+#fruitsContainer{
+/*
+    width: 70%;
+    height: 60%;
+    background-color: white;
+    box-shadow: 0px 4px 0px grey;
+    border-radius: 5px;
+    position: absolute;
+    top: 70px;
+    left: 15%;
+    */
+    width: 650px;
+    height: 400px;
+    margin: 50px auto 10px auto;
+    background-color: white;
+    box-shadow: 0px 4px #535aa8;
+    font-size: 100px;
+    text-align: center;
+    font-family: cursive, sans-serif;
+    color: black;
+    position: relative;
+    overflow: hidden;
+}
+
+#instruction{
+/*
+    width: 40%;
+    padding: 5px;
+    background-color: blueviolet;
+    box-shadow: 0px 4px 0px grey;
+    text-align: center;
+    border-radius: 4px;
+    position: absolute;
+    top:  74%;
+    left: 30%;
+    margin-top: 8px;
+*/
+    
+    width: 450px;
+    height: 50px;
+    background-color: #B481d9;
+    margin: 10px auto;
+    text-align: center;
+    line-height: 45px;
+    box-shadow: 0px 4px #8153a8;
+    -webkit-box-shadow: 0px 4px #8153a8;
+    -moz-box-shadow: 0px 4px #8153a8;
+    -ms-box-shadow: 0px 4px #8153a8;
+    -o-box-shadow: 0px 4px #8153a8;
+}
+
+#startreset{
+    width: 78px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.5);
+    margin: 0 auto;
+    border-radius: 3px;
+    cursor: pointer;
+    box-shadow: 0px 4px rgba(0, 0, 0, 0.2);
+    -weblit-box-shadow: 0px 4px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0px 4px rgba(0, 0, 0, 0.2);
+    -o-box-shadow: 0px 4px rgba(0, 0, 0, 0.2);
+    -ms-box-shadow: 0px 4px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2;
+    -ms-transition: all 0.2;
+    -o-transition: all 0.2s;
+    position: relative; /* If we don't specify position relative then startrest button won't have effect of pressing down when active */
+}
+
+#startreset:active{
+    background-color: #9c89f6;
+    color: white;
+    box-shadow: 0px 4px #6b54d3;
+    -webkit-box-shadow: 0px 4px #6b54d3;
+    top: 4px;
+}
+
+#startreset:hover{
+    background-color: #9c89f6;
+    color: white;
+    box-shadow: 0px 4px #6b54d3;
+    -webkit-box-shadow: 0px 4px #6b54d3;
+    -moz-box-shadow: 0px 4px #6b54d3;
+    -ms-box-shadow: 0px 4px #6b54d3;
+    -o-box-shadow: 0px 4px #6b54d3;
+}
+
+#gameOver{
+    height: 200px;
+    width: 500px;
+    background: linear-gradient(#F3ca6b, #f3706c);
+    color: white;
+    font-size: 2.5em;
+    text-align: center;
+    text-transform: uppercase;
+    position: absolute;
+    top: 170px;
+    left: 145px;
+    z-index: 2px;
+    display: none;
+}
+
+.life{
+    width: 16px;
+    height: 16px;
+    margin: 0 5px;
+}
+
+.fruit{
+    display: none;
+    position: absolute;
+}
